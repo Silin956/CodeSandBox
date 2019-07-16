@@ -20,7 +20,11 @@ export default class Search extends Component {
     });
   }
   clearValue() {
-    this.setState({ value: "" });
+    this.setState({ value: "" }, () => {
+      if (this.props.onSearch) {
+        this.props.onSearch(null);
+      }
+    });
   }
   render() {
     return (
