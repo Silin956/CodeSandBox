@@ -4,6 +4,7 @@ open{boolean} 控制 options 下拉的显示与隐藏
 可选参数:true | false
 
 defaultValue{string} 默认选中的值
+defaultContent{string} 默认显示的文案(优先级大于 defaultValue)
 
 ###事件
 onSelect | 选择 option 下拉项时触发的回调，参数 value 为选中的 option 的 value 值
